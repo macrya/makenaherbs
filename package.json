@@ -1,0 +1,24 @@
+{
+  "name": "makena-herbs",
+  "version": "1.0.0",
+  "description": "Makena Herbs - Premium organic herbs and natural remedies website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "herbs",
+    "organic",
+    "natural",
+    "wellness"
+  ],
+  "author": "Makena Herbs",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
