@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Makena Herbs - Premium organic herbs and natural remedies">
+    <title>Makena Herbs | Premium Organic Herbs & Natural Remedies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Makena Herbs</h1>
+                    <p class="tagline">Natural Wellness, Naturally</p>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Discover the Power of Nature</h2>
+                    <p>Premium organic herbs and natural remedies for your wellness journey</p>
+                    <button class="cta-button" onclick="scrollToSection('products')">Explore Our Products</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <div class="container">
+                <h2 class="section-title">Our Premium Herbs</h2>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="medicinal">Medicinal</button>
+                    <button class="filter-btn" data-filter="culinary">Culinary</button>
+                    <button class="filter-btn" data-filter="tea">Tea</button>
+                </div>
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be dynamically loaded here by products.js -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Makena Herbs</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>At Makena Herbs, we believe in the healing power of nature. Our mission is to provide the highest quality organic herbs sourced from sustainable farms around the world.</p>
+                        <p>Each herb is carefully selected, tested, and packaged to preserve its natural potency and therapeutic properties. We work directly with organic farmers who share our commitment to environmental stewardship and ethical practices.</p>
+                        <div class="features">
+                            <div class="feature">
+                                <h3>🌿 100% Organic</h3>
+                                <p>Certified organic herbs with no pesticides or chemicals</p>
+                            </div>
+                            <div class="feature">
+                                <h3>🌍 Sustainably Sourced</h3>
+                                <p>Partnering with ethical farms worldwide</p>
+                            </div>
+                            <div class="feature">
+                                <h3>✨ Lab Tested</h3>
+                                <p>Quality assured through rigorous testing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> info@makenaherbs.com</p>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                    <p><strong>Hours:</strong> Mon-Fri 9AM-6PM EST</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Makena Herbs. All rights reserved.</p>
+            <p>Crafted with care for your natural wellness</p>
+        </div>
+    </footer>
+
+    <!-- Load JavaScript files -->
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
